@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage[a4paper]{geometry}
+\geometry{landscape, margin=1in}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% setup for white on black aka dark mode
+\usepackage{pagecolor}
+\pagecolor{black}
+\color{white}
+
+\setlength{\parindent}{0pt}
+% \usepackage{mdframed}
+% \newcommand{whitebox}[1]{\begin{mdframed}[backgroundcolor=black,linecolor=white,fontcolor=white]#1\end{mdframed} }
+
+\begin{document}
+% remove page number
+\pagestyle{empty}
+\begin{center}
+{\LARGE Shortcuts}
+\Large %dirty but works for now
+
+\begin{multicols}{2}
+
+\section{BASH}
+\begin{tabular}{ll}
+C-a&Line start\\
+C-e&Line end\\
+A-b/f&1 word back/forward\\
+C-b/f&1 char back/forward\\
+\\
+C-xx&toggle 0/cursor\\
+\\
+C-w&delete word before\\
+A-d&delete word after\\
+\\
+C-u/k&cut text before/after\\
+\\
+S-Insert&paste at cursor\\
+\\
+CS-code&Unicode\\
+\\
+C-p/n&history previous/next\\
+C-r&history search\\
+C-g&escape history search\\
+\\
+C-l&clear\\
+
+%!!&repeat last command
+\end{tabular}
+
+\section{I3}
+% HIGHLY CUSTOM YMMV
+\begin{tabular}{ll}
+MC-jkl;&resize\\
+MC-w&jump to urgent\\
+M-Esc&lock screen\\
+M-F2/F3&volume -/+\\
+M-F4&volume mute\\
+\end{tabular}
+
+\section{Mods}
+\begin{tabular}{ll}
+M&Capslock\\
+C&Ctrl\\
+S&Shift\\
+A&Alt\\
+W&Windows\\
+\end{tabular}
+
+\end{multicols}
+\end{center}
+\end{document}

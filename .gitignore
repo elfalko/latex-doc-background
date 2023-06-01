@@ -1,0 +1,8 @@
+*.mt0 
+*.mtc* 
+*.toc 
+*.idx 
+*.ilg 
+*.aux 
+*.log 
+*.pdf
