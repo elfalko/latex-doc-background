@@ -14,5 +14,5 @@ clean:
 
 imagine:
 	# convert -geometry 1920x1080 -density 200x200 -quality 100 cheatsheet.pdf cheatsheet.jpg
-	convert -density 200x200 -quality 100 cheatsheet.pdf cheatsheet.jpg
-	/usr/bin/feh --no-fehbg --bg-max ~/projects/cheatsheet/cheatsheet.jpg
+	magick -density 200x200 -quality 100 cheatsheet.pdf cheatsheet.jpg
+	/usr/bin/feh --no-fehbg --bg-max ${PWD}/cheatsheet.jpg
